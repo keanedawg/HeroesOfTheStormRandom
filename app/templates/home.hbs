@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         {{#each model as |hero|}}
-            <HeroSelectPortrait @hero={{hero.name}} @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
+            <HeroSelectPortrait @hero={{hero.name}} @avatar={{hero.icon_url.92x93}}/>
         {{/each}}
     </div>
 </div>
