@@ -1,27 +1,8 @@
 <div class="container">
     <div class="row">
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
-        <HeroSelectPortrait @hero="Abathur" @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
+        {{#each model as |hero|}}
+            <HeroSelectPortrait @hero={{hero.name}} @avatar="http://s3.hotsapi.net/img/heroes/92x93/abathur.png"/>
+        {{/each}}
     </div>
 </div>
 {{outlet}}
