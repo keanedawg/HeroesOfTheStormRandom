@@ -6,11 +6,7 @@
       </h1>
     </div>
   </div>
-  <div class="row">
-    <div class="offset-1 col-10 my-4">
-      <RandomHeroSelector />
-    </div>
-  </div>
+  <RandomHeroSelector />
   <div class="row">
     {{#each model as |hero|}}
       <HeroSelectPortrait @hero={{hero.name}} @avatar={{hero.icon_url.92x93}} />
