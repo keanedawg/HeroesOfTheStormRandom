@@ -3,7 +3,7 @@
     <img src={{portrait}} alt="{{hero}} Portrait" class="rounded-circle"
       onerror="this.src='http://s3.hotsapi.net/img/heroes/92x93/abathur.png'">
     <h5>{{hero}}</h5>
-    <button type="button" class="btn btn-primary">Pick Random Hero</button>
+    <button type="button" class="btn btn-primary" onclick={{action "generateRandomHero"}}>Pick Random Hero</button>
   </div>
 </div>
 {{yield}}
