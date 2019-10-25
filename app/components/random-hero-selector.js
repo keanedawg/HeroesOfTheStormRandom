@@ -6,7 +6,10 @@ export default Component.extend({
   heroList: [],
   actions: {
     generateRandomHero() {
-      Math.floor((Math.random() * heroList.length) + 1);
+      let randnum = Math.floor((Math.random() * this.heroList.length) + 1);
+      console.log(randnum);
+      this.hero = this.heroList.name;
+      this.portrait = this.heroList.icon_url["92x93"];
     }
   }
 });
