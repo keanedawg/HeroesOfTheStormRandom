@@ -6,8 +6,7 @@ export default Component.extend({
   heroList: [],
   actions: {
     generateRandomHero() {
-      console.log("something")
-      console.log(heroList)
+      Math.floor((Math.random() * heroList.length) + 1);
     }
   }
 });
