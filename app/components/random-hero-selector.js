@@ -8,8 +8,8 @@ export default Component.extend({
     generateRandomHero() {
       let randnum = Math.floor((Math.random() * this.heroList.length) + 1);
       console.log(randnum);
-      this.hero = this.heroList.name;
-      this.portrait = this.heroList.icon_url["92x93"];
+      this.set('hero', "Cho");
+      this.set('portrait', "http://s3.hotsapi.net/img/heroes/92x93/chogall.png");
     }
   }
 });
