@@ -52,5 +52,8 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "mongodb-stitch-browser-sdk": "^4.6.0"
   }
 }
