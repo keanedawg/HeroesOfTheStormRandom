@@ -54,6 +54,7 @@
     "node": "8.* || >= 10.*"
   },
   "dependencies": {
+    "heroes-talents": "git+https://git@github.com/heroespatchnotes/heroes-talents.git",
     "mongodb-stitch-browser-sdk": "^4.6.0"
   }
 }
