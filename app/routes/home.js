@@ -3,7 +3,7 @@ import fetch from 'fetch';
 
 export default Route.extend({
   model() {
-    return fetch('https://hotsapi.net/api/v1/heroes').then(function (response) {
+    return fetch('/hero-data/heroes.json').then(function (response) {
       return response.json();
     });
   }
