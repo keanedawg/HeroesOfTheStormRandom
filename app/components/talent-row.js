@@ -6,7 +6,7 @@ export default Component.extend({
   index: null,
   init() {
     this._super(...arguments);
-    let randnum = Math.floor((Math.random() * this.heroTalent.length()) + 1);
-    this.index = randnum;
+    //    let randnum = Math.floor((Math.random() * this.heroTalent.length()) + 1);
+    //    this.index = randnum;
   }
 });
