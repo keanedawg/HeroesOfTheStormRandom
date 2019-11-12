@@ -1,11 +1,13 @@
 <div class="row">
   <div class="col-12 text-center my-4">
-    <img src="https://res.cloudinary.com/dfk9gsv2s/image/upload/v1573024729/heroes/{{portrait}}" alt="{{hero}} Portrait"
-      class="rounded-circle"
+    <img src="https://res.cloudinary.com/dfk9gsv2s/image/upload/v1573024729/heroes/{{portrait}}"
+      alt="{{heroName}} Portrait" class="rounded-circle"
       onerror="this.src='https://res.cloudinary.com/dfk9gsv2s/image/upload/v1573024729/heroes/abathur.png'">
-    <h5>{{hero}}</h5>
+    <h5>{{heroName}}</h5>
     <button type="button" class="btn btn-primary" onclick={{action "generateRandomHero"}}>Pick Random Hero</button>
   </div>
 </div>
-<TalentTable @hero={{model.[0]}} />
+{{#if hero}}
+  <TalentTable @hero={{hero}} />
+{{/if}}
 {{yield}}
