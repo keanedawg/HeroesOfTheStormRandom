@@ -3,10 +3,9 @@ import Component from '@ember/component';
 export default Component.extend({
   tagName: "tr",
   heroTalent: null,
+  level: null,
   index: null,
-  init() {
+  didReceiveAttrs() {
     this._super(...arguments);
-    //    let randnum = Math.floor((Math.random() * this.heroTalent.length()) + 1);
-    //    this.index = randnum;
   }
 });
