@@ -9,7 +9,7 @@ export default Component.extend({
   hero: null,
   actions: {
     async generateRandomHero() {
-      let randnum = Math.floor((Math.random() * this.heroList.length) + 1);
+      let randnum = Math.floor((Math.random() * this.heroList.length));
       this.set('heroName', this.heroList[randnum]['name']);
       this.set('portrait', this.heroList[randnum]['icon']);
       this.set('hero', this.heroList[randnum]);
