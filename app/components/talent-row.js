@@ -7,5 +7,7 @@ export default Component.extend({
   index: null,
   didReceiveAttrs() {
     this._super(...arguments);
+    this.index = Math.floor((Math.random() * this.heroTalent.length));
+    this.heroTalent = this.heroTalent[this.index];
   }
 });
