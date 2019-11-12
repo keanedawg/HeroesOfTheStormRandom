@@ -7,7 +7,6 @@
     </div>
   </div>
   <RandomHeroSelector @heroList={{model}} />
-  <TalentTable @hero={{model.[0]}} />
   <div class="row">
     {{#each model as |hero|}}
       <HeroSelectPortrait @hero={{hero.name}} @avatar={{hero.icon}} />
