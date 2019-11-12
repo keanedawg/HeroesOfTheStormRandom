@@ -8,23 +8,10 @@
     </tr>
   </thead>
   <tbody>
-    <TalentRow @heroTalent={{hero.talents}} />
-    <tr>
-      <th scope="row">4</th>
-      <td><img
-          src="https://res.cloudinary.com/dfk9gsv2s/image/upload/v1573425064/talents/storm_ui_icon_guldan_healthfunnel.png"
-          alt="Pursuit of Flame"></td>
-      <td>Health Funnel</td>
-      <td>Drain Life's cooldown recharges 100% faster while it is channeling. If an enemy dies while under the effect of
-        Drain Life, the cooldown is instantly refreshed.</td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td><img
-          src="https://res.cloudinary.com/dfk9gsv2s/image/upload/v1573425064/talents/storm_ui_icon_guldan_felflame.png"
-          alt="Bound by Shadow"></td>
-      <td>Bound by Shadow</td>
-      <td>Each enemy Hero hit with Fel Flame reduces the cooldown of Corruption by 1.5 seconds.</td>
-    </tr>
+    <TalentRow @heroTalent={{hero.talents.[1]}} />
+    <TalentRow @heroTalent={{hero.talents.[4]}} />
+    <TalentRow @heroTalent={{hero.talents.[7]}} />
+    <TalentRow @heroTalent={{hero.talents.[10]}} />
+    <TalentRow @heroTalent={{hero.talents.[13]}} />
   </tbody>
 </table>
