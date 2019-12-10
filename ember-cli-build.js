@@ -8,6 +8,11 @@ module.exports = function (defaults) {
       'bootstrapVersion': 4,
       'importBootstrapCSS': false
     },
+    prember: {
+      urls: [
+        '/',
+      ]
+    },
     sassOptions: {
       extension: 'scss'
     }
