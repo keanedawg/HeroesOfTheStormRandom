@@ -13,6 +13,9 @@ module.exports = function (defaults) {
         '/',
       ]
     },
+    fastboot: {
+      hostWhitelist: ['cameronjfife.com', /^localhost:\d+$/]
+    },
     sassOptions: {
       extension: 'scss'
     }
