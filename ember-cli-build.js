@@ -8,14 +8,6 @@ module.exports = function (defaults) {
       'bootstrapVersion': 4,
       'importBootstrapCSS': false
     },
-    prember: {
-      urls: [
-        '/',
-      ]
-    },
-    fastboot: {
-      hostWhitelist: ['cameronjfife.com', /^localhost:\d+$/]
-    },
     sassOptions: {
       extension: 'scss'
     }
